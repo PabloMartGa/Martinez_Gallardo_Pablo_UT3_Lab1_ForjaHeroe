@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+
+        <EditText
+            android:id="@+id/idNombre"
+            android:layout_width="362dp"
+            android:layout_height="64dp"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLines="1">
+
+            <requestFocus />
+        </EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_raza"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <Spinner
+            android:id="@+id/idRaza"
+            android:layout_width="367dp"
+            android:layout_height="52dp"
+            android:entries="@array/razas" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_faccion"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <RadioGroup
+            android:id="@+id/idFaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/opcComunidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faccion_comunidad" />
+
+            <RadioButton
+                android:id="@+id/opcMordor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faccion_mordor" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_habilidades"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <CheckBox
+            android:id="@+id/cbSigilo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hab_sigilo" />
+
+        <CheckBox
+            android:id="@+id/cbEspada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hab_espada" />
+
+
+        <ImageButton
+            android:id="@+id/btnRegistrar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_escudo"
+            android:scaleType="fitCenter"
+            android:padding="12dp"
+            android:contentDescription="@string/cd_registrar" />
+
+    </LinearLayout>
+</ScrollView>

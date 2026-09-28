@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Martinez_Gallardo_Pablo_UT3_Lab1_ForjaHeroe</string>
+
+    <string name="titulo">El Creador de Personajes de la Tierra Media</string>
+    <string name="hint_nombre">Nombre del guerrero</string>
+    <string name="label_raza">Raza</string>
+    <string name="label_faccion">Facción</string>
+    <string name="label_habilidades">Habilidades especiales</string>
+
+
+    <string-array name="razas">
+        <item>Hobbit</item>
+        <item>Elfo</item>
+        <item>Enano</item>
+        <item>Humano</item>
+    </string-array>
+
+
+    <string name="faccion_comunidad">Comunidad del Anillo</string>
+    <string name="faccion_mordor">Huestes de Mordor</string>
+
+
+    <string name="hab_sigilo">Sigilo</string>
+    <string name="hab_espada">Combate con Espada</string>
+
+
+    <string name="cd_registrar">Registrar personaje</string>
+
+
+    <string name="error_nombre">Escribe el nombre del guerrero</string>
+    <string name="error_faccion">Elige una facción</string>
+    <string name="ninguna">Ninguna</string>
+
+
+    <string name="resumen">Guerrero: %1$s\nRaza: %2$s\nFacción: %3$s\nHabilidades: %4$s</string>
+</resources>
